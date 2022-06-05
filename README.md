@@ -1,3 +1,3 @@
-https://henriqueschn.github.io/henriqueschneider
+https://henriqueschn.github.io/PersonalWeb/
 
 Henrique Schneider Personal Website
