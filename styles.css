@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: rgb(145, 145, 145);
+}
 .header{
     height: 60px;
     width: 100%;
@@ -67,6 +70,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background: white;
 }
 .about-me{
     width: 57%;
@@ -77,6 +81,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background: white;
 }
 .img-profile{
     height: 300px;
@@ -90,6 +95,7 @@
     height: 100%;
     padding: 20px;
     margin-bottom: 20px;
+    background: white;
 }
 .content2-projects{
     display: flex;
@@ -124,17 +130,23 @@
     margin: 5px;
 }
 .left-project, .right-project{
-    width: 400px;
+    width: 100%;
     box-shadow: 1px 1px 5px gray;
     margin: 5px;
     padding: 10px;
+    display: flex;
+    
 }
 .content-project{
     margin-top: 5px;
+    width: 100%;
 }
-
+.active{
+    box-shadow: 0px 0px 20px 2px rgb(145, 145, 145);
+}
 footer{
     background: #363636;
+    display: relative;
 }
 .container-footer{
     display: flex;
@@ -145,4 +157,7 @@ footer{
 }
 .texto, .link-email{
     color: white;
+}
+.descricao{
+    width: 100%;
 }
