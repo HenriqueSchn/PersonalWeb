@@ -1,131 +1,284 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henrique Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container container-header">
-            <div class="nome-logo">
-                <img class="img-logo" src="./img/logo-linkedin.svg" alt="">
-                <h1 class="nome">Henrique Oliveira Schneider</h1>
-            </div>
-            <div class="redes-sociais">
-                <a href="" class="link">
-                    <img class="img-link" src="./img/logo-linkedin.svg" alt="" class="icone-rede">
-                    <p class="nome-rede">Linkedin</p>
-                </a>
-                <a href="" class="link">
-                    <img class="img-link" src="" alt="" class="icone-rede">
-                    <p class="nome-rede">Resume</p>
-                </a>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Henrique Schneider</h1>
+            <h2>Management Engineering Intern</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I have been working with engineers to improve our team and company using my skills and projects. I like to create, optimize and scale production process with modern technology and data based decisions for management such as KPI, demand planning and process analysis.
+                        <br>
+                        <br>
+                        My history shows a study of quality in federal institutions and courses to excel my tasks and be proactive on my job. By my experience, is clear i can support and lead a team to plan, control and upgrade their performance.On my dayjob, I follow and apply technology to boost my learning progress and help the company get better solutions on their projects.
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
-    <div class="content1">
-        <div class="container container-content1">
-            <div class="profile">
-                <img src="./img/logo-linkedin.svg" alt="" class="img-profile">
-                <h1 class="name">Henrique Schneider</h1>
-                <p class="job">Management Engineer Intern</p>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2021 – Current">
+                <h3>Taurus S/A</h3>
+                <h4>Management Engineering Intern</h4>
+                <p>
+                    With the manager of the factory, procedure meetings, scheduled production and made key performance indicators for
+                    management planning in budget, quality and production control.
+                    <br>
+                    <br>
+                    Leader in improvement projects: improved communication process and reports for team production planning using note
+                    process, sheets and new app implementation    
+                </p>
             </div>
 
-            <div class="about-me">
-                <h1 class="title-about-me">About Me</h1>
-                <br>
-                <br>
-                <p class="text-about-me">Breaking through the fields of production engineering, I persue to learn new ways to improve efficiency, teamwork in project management and upgrade process in my job. Trying to develop an international career using my skills and professional projects for great results.</p>
-                <br>
-                <p class="text-about-me">I have as an objective to work with expertise, data and technology</p>
+            <div data-date="April 2019 – September 2019">
+                <h3>ITS - Material Cirúrgico</h3>
+                <h4>PCP Assistant Intern</h4>
+                <p>
+                    Assistent on stock control, buy and delivery material. Use of ERP software to generate and follow orders of production internally. Daily contact with suppliers and responsible for new providers.
+                </p>
             </div>
-        </div>    
-    </div>
-    <div class="content2">
-        <div class="container container-content2">
-            <h1 class="title-projects">Main Projects</h1>
-            <div class="content2-projects">
-                <div class="group-projects">
-                    <div class="two-projects">
-                        <div class="left-project project1" onMouseover="document.img.src= './img/logo-linkedin.svg' ">
-                            <div class="descricao project1">
-                                <h2 class="title-project project1" >KPI Reports</h2>
-                                <p class="content-project project1">Created ne KPI on Overall Equipment Effectiveness (OEE) and prodution perfomance on different sectors at Taurus/Brazil.</p>
-                                <br>
-                                <p class="content-project project1">Softwares: Power BI, Excel, SAP</p>
-                            </div>
-                        </div>
-                        <div class="right-project project2" onMouseover="document.img.src= 'https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg?w=2000' ">
-                            <div class="descricao project2">
-                                <h2 class="title-project project2">Green Belt</h2>
-                                <p class="content-project project2">Teamwork on Green Belt manufacture problems, including: Production Accuracy, Mean Time to Repare, Problem Solving Program</p>
-                                <br>
-                                <p class="content-project project2">Softwares: Excel VBA, MatLab</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="two-projects ">
-                        <div class="left-project project3" onMouseover="document.img.src= 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?w=2000' ">
-                            <div class="descricao project3">
-                                <h2 class="title-project project3">Urban Logistics</h2>
-                                <p class="content-project project3">Organized full cost reports, schedule and improvement program for a graduation project in Urban Transportation Management</p>
-                                <br>
-                                <p class="content-project project2">Softwares: Excel, evenue Report</p>
-                            </div>
-                        </div>
-                        <div class="right-project  project4" onMouseover="document.img.src= 'https://tm.ibxk.com.br/2020/01/30/30021141299110.jpg?ims=1120x420' ">
-                            <div class="descricao project4">
-                                <h2 class="title-project project4">Data Analytics App</h2>
-                                <p class="content-project project4">Developed systematic process for data registration and reports. Conducted implementation and management plan for Taurus' manufacturing app</p>
-                                <br>
-                                <p class="content-project project2">Softwares: VBA, Power Apps/BI</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-projecto">
-                    <img src="./img/logo-linkedin.svg" alt="" class="project-img" name="img">
-                </div>
-                
+
+            <div data-date="September 2018 – April 2019">
+                <h3>JBA Inc.</h3>
+                <h4>Civil Production Assistant</h4>
+                <p>
+                    Assistant in construction planning, service review and stock on 2 buildings in São Leopoldo.
+                    <br>
+                    <br>
+                    Performed and communicated weekly strategic planning projects for employees and suppliers. Responsible for team quality, progress and tasks reports
+
+                </p>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container container-footer">
-            <h1 class="texto">If you'd like to contact me, feel free to email</h1>
-            <a href="" class="link-email">henriqueschn@gmail.com</a>
+    <!-- End #experience -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Power BI SAP Reports and Data-gathering</h3>
+                        <p>
+                            Developed systematic data process for decision making resolutions and project's sucess validation.
+                            Created new KPI on Overall Equipment Effectiveness (OEE) and prodution perfomance on different sectors at Taurus/Brazil.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Urban Logistics Cost and Schedule Management</h3>
+                        <p>
+                            Organized full cost reports, schedule and improvement program for a graduation project in Urban Transportation Management. Provided autoregulated system that used inputs from updated market data to model different scenarios.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Power BI</li>
+            <li>Python</li>
+            <li>Power Apps</li>
+            <li>SQL</li>
+            <li>Excel VBA</li>
+            <li>AutoCad</li>
+            <li>Solid Works</li>
+            <li>Data Analytics</li>
+            <li>Six Sigma</li>
+            <li>Green Belt</li>
+            <li>MS Project</li>
+            <li>Scrum</li>
+            <li>Quality Assurance Systems</li>
+            <li>Statistical Quality Control</li>
+            <li>KPI Analytics</li>
+            <li>Cost Management</li>
+            <li>Agile</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Federal University of Rio Grande do Sul - UFRGS</h3>
+            <span class="education-date">September 2019 - December 2024</span>
+            <h4>Bachelor of Management Engineering</h4>
+            <p>
+                Courses: Agile Project Management, Process and Performance KPI, HR coordination, Data Science, Cost Management
+                <br>
+                Activities: Value Stream Mapping, DMAIC projects, Six Sigma tools and data analytics for real industry problems and execution
+
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Federal University of Rio Grande do Sul - UFRGS</h3>
+            <span class="education-date">August 2020 - December 2020</span>
+            <h4>Six Sigma Course - Yellow Belt</h4>
+            <ul>
+                <li>
+                    Lean six sigma tools and concepts
+                </li>
+                <li>
+                    Management engineering systems: process maping, project charter, matrix
+                </li>
+                <li>
+                    Essential course to any business process improvement as it significantly improves the efficiency of the business by identifying flaws and weaknesses in the processes
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2022</span> HENRIQUE SCHNEIDER
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-    <script>
+    <!-- End footer -->
 
-        document.querySelector('.project1').onmouseover = function(){
-            document.querySelector('.project2').classList.remove('active')
-            document.querySelector('.project3').classList.remove('active')
-            document.querySelector('.project4').classList.remove('active')
-            document.querySelector('.project1').classList.toggle('active')
-        }
-        document.querySelector('.project2').onmouseover = function(){
-            document.querySelector('.project1').classList.remove('active')
-            document.querySelector('.project3').classList.remove('active')
-            document.querySelector('.project4').classList.remove('active')
-            document.querySelector('.project2').classList.toggle('active')
-        }
-        document.querySelector('.project3').onmouseout = function(){
-            document.querySelector('.project2').classList.remove('active')
-            document.querySelector('.project1').classList.remove('active')
-            document.querySelector('.project4').classList.remove('active')
-            document.querySelector('.project3').classList.toggle('active')
-        }
-        document.querySelector('.project4').onmouseout = function(){
-            document.querySelector('.project2').classList.remove('active')
-            document.querySelector('.project3').classList.remove('active')
-            document.querySelector('.project1').classList.remove('active')
-            document.querySelector('.project4').classList.toggle('active')
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
